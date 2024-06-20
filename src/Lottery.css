@@ -1,0 +1,96 @@
+/* Lottery.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    font-family: 'Roboto', sans-serif;
+}
+
+.ticket {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #4a4a4a;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    color: #333;
+    transition: transform 0.2s;
+}
+
+.ticket:hover {
+    transform: scale(1.05);
+}
+
+/* Commented out the pseudo-elements to remove the ball-type decorations */
+/* 
+.ticket:before, .ticket:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    border: 2px dashed #4a4a4a;
+}
+
+.ticket:before {
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ticket:after {
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+*/
+
+.ticket span {
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+button {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+h3 {
+    text-align: center;
+    color: #ffeb3b;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.free-ticket-message {
+    text-align: center;
+    color: #ff5722;
+    font-size: 1.2em;
+}
